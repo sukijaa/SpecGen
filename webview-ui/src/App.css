@@ -1,0 +1,55 @@
+/* webview-ui/src/App.css */
+body {
+    background-color: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+    font-family: var(--vscode-font-family);
+}
+.App {
+    padding: 1rem;
+}
+.App-header {
+    margin-bottom: 2rem;
+}
+h1, h2, h3 {
+    color: var(--vscode-editor-foreground);
+}
+.main-content {
+    display: flex;
+    gap: 1rem;
+}
+.plan-view {
+    flex: 1;
+    max-width: 40%;
+}
+.code-view {
+    flex: 2;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.plan-step {
+    padding: 0.75rem;
+    border: 1px solid var(--vscode-editorWidget-border);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.plan-step.active {
+    background-color: var(--vscode-list-activeSelectionBackground);
+}
+.plan-step p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+/* Make VSCode components look good */
+vscode-text-area, vscode-button {
+    width: 100%;
+    margin-top: 0.5rem;
+}
